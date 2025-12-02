@@ -6,10 +6,8 @@ import routes from "./routes/routes";
 const app = express(); // 
 app.use(express.json());
 
-// Adiciona as rotas com o prefixo '/api' (ex: /api/livros)
 app.use("/api", routes);
 
-// Inicialza a conexão com o banco de dados e depois inicia o servidor
 AppDataSource.initialize().then(async () => {
     console.log("Banco de dados conectado! (SQLite file created or found)");
     

@@ -4,21 +4,21 @@ import { LivroController } from "../controller/LivroController";
 const router = Router();
 const controller = new LivroController();
 
-// Mapeamento dos Endpoints
+// mapeamento endpoints
 
-// Criar Livro (POST /api/livros)
+// criar os livros 
 router.post("/livros", (req, res) => controller.create(req, res));
 
-// Ler Todos (GET /api/livros)
+// ler todos os livros
 router.get("/livros", (req, res) => controller.getAll(req, res));
 
-// Ler por ID (GET /api/livros/{id})
+// Ler por ID
 router.get("/livros/:id", (req, res) => controller.getOne(req, res));
 
-// Atualizar (PUT /api/livros/{id})
+// atualizar
 router.put("/livros/:id", (req, res) => controller.update(req, res));
 
-// Excluir (DELETE /api/livros/{id})
+// excluir
 router.delete("/livros/:id", (req, res) => controller.remove(req, res));
 
 export default router;

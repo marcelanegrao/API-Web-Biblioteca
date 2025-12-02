@@ -5,7 +5,7 @@ import { Livro } from "./entity/Livro";
 export const AppDataSource = new DataSource({
     type: "sqlite",
     database: "database.sqlite",
-    synchronize: true, // Cria as tabelas automaticamente (apenas para dev)
+    synchronize: true,
     logging: false,
     entities: [Livro],
     migrations: [],

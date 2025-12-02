@@ -3,20 +3,20 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 @Entity()
 export class Livro {
     @PrimaryGeneratedColumn()
-    id: number; // [cite: 8]
+    id: number;
 
     @Column()
-    titulo: string; // [cite: 9]
+    titulo: string;
 
     @Column()
-    autor: string; // [cite: 10]
+    autor: string; 
 
     @Column()
-    isbn: string; // [cite: 11]
+    isbn: string;
 
     @Column()
-    anoPublicacao: number; // [cite: 12]
+    anoPublicacao: number;
 
     @Column()
-    disponivel: boolean; // [cite: 13]
+    disponivel: boolean;
 }

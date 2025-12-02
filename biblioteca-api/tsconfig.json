@@ -5,15 +5,12 @@
     "rootDir": "./src",
     "outDir": "./dist",
     
-    /* Configurações OBRIGATÓRIAS para o TypeORM funcionar */
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
 
-    /* Configurações de Compatibilidade */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
-    /* Configurações de Rigor (Desativadas para facilitar o exercício) */
     "strict": false,
     "skipLibCheck": true
   }
